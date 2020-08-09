@@ -1,5 +1,6 @@
-export BH0SHELL=$(dirname $0)
-bh0export HISTFILE    $(dirname $0)/HISTFILE
+bh0include   .__PERSIST__
+bh0export    __PERSIST__     ~/.__PERSIST__
+bh0export HISTFILE    ${__PERSIST__}/HISTFILE
 bh0export HISTSIZE    5000            # How many lines of history to keep in memory
 bh0export SAVEHIST    5000            # Number of history entries to save to disk
 bh0export HISTDUP     erase           # Erase duplicates in the history file
