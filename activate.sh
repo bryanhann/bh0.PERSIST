@@ -1,6 +1,4 @@
-bh0include   .__PERSIST__
-bh0export    __PERSIST__     ~/.__PERSIST__
-bh0export HISTFILE    ${__PERSIST__}/HISTFILE
+bh0export HISTFILE    ${BH0__PERSIST__}/HISTFILE
 bh0export HISTSIZE    5000            # How many lines of history to keep in memory
 bh0export SAVEHIST    5000            # Number of history entries to save to disk
 bh0export HISTDUP     erase           # Erase duplicates in the history file
