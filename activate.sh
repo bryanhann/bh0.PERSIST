@@ -1,4 +1,5 @@
-bh0export HISTFILE    ${BH0__PERSIST__}/HISTFILE
+bh0include bh0.shell.persist
+bh0export HISTFILE    $(bh0module bh0.shell.persist)/HISTFILE
 bh0export HISTSIZE    5000            # How many lines of history to keep in memory
 bh0export SAVEHIST    5000            # Number of history entries to save to disk
 bh0export HISTDUP     erase           # Erase duplicates in the history file
